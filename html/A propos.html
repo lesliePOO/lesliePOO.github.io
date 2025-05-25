@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="/css/tailwind-all.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+        .imgA{
+              height: 400px;
+              width: 400px;
+              margin-left: 20px;
+            }
+        .monElement {
+            background-image: url('/image/bg.JPG');
+            background-size:  cover;
+            background-position:center ;
+            background-repeat:  no-repeat; 
+            padding-top: 200px;
+            padding-bottom: 100px;
+            min-height: 500px;
+        }
+      
+        
+        
+    </style>
+
+     <header class="bg-yellow-900 text-gray-300 py-4 relative z-30">
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+  <div class="container mx-auto px-4 flex items-center justify-between relative z-10">
+    <div class="flex items-center">
+      <img src="/image/logo (1).JPG" alt="Chey Logo" class="h-8 md:h-10">
+      <span class="ml-2 text-lg text-white  uppercase tracking-widest">KERSY FOOD</span>
+    </div>
+    <nav class="hidden md:flex space-x-6 flex gap-30 justify-around">
+      <div><a href="Accueil.html" class=" mr-4   hover:text-yellow-500 transition-colors duration-300 ">ACCUEIL</a></div>
+      <div><a href="A propos.html" class=" mr-4  text-yellow-500 ">A PROPOS</a></div>
+      <div><a href="MENU.html" class=" mr-4   hover:text-yellow-500 transition-colors duration-300">MENU</a></div>
+      <div><a href="conctact.html" class=" mr-4  hover:text-yellow-500 transition-colors duration-300">RESERVER</a></div>
+      <div><a href="conctact.html" class=" mr-4 hover:text-yellow-500 transition-colors duration-300">CONCTACT</a></div>
+    
+    </nav>
+
+    <!-- Bouton menu hamburger -->
+    <button id="menu-toggle" class="md:hidden z-20">
+      <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Bouton de réservation (desktop uniquement) -->
+    <a href="conctact.html" class="hidden md:block bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 focus:outline-none">RESERVATION</a>
+  </div>
+</header>
+
+<!-- Menu déroulant mobile : affiché en-dessous du header -->
+<nav id="menu" class="hidden md:hidden flex flex-col items-center space-y-4 bg-yellow-900 text-white py-4">
+  <a href="Accueil.html" class="text-yellow-500">ACCUEIL</a>
+  <a href="A propos.html" class="hover:text-yellow-500 transition">A PROPOS</a>
+  <a href="MENU.html" class="hover:text-yellow-500 transition">MENU</a>
+  <a href="conctact.html" class="hover:text-yellow-500 transition">RESERVER</a>
+  <a href="conctact.html" class="hover:text-yellow-500 transition">CONTACT</a>
+</nav>
+
+
+    <section class="py-16 md:py-20 bg-gray-900 text-white px-4">
+        <div class="container mx-auto">
+            <h2 class="text-center bg-orange-500 font-bold mb-10 text-white text-3xl rounded py-2 lg:text-4xl">A PROPOS DE NOUS</h2>
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 mt-8">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <p class="max-w-xl mx-auto md:mx-0 text-lg leading-relaxed text-justify text-balance">
+                        Situé au cœur de Bonamoussadi, "KERSY FOOD" est bien plus qu'un simple restaurant ; c'est une invitation à un voyage culinaire authentique à travers les saveurs riches et variées du Cameroun. Nous sommes fiers de vous offrir une expérience gastronomique où chaque plat est une célébration de notre héritage culinaire, préparé avec passion et des ingrédients frais, locaux, et sans compromis sur le goût.<br><br>
+                        Notre mission ? C'est de vous faire découvrir la richesse de la cuisine camerounaise dans une ambiance chaleureuse et conviviale. Que vous soyez en pause déjeuner, en famille ou entre amis, vous méritez un repas savoureux, préparé avec expertise par notre équipe dévouée. Venez vivre une expérience unique où la tradition rencontre la saveur, et chaque bouchée raconte une histoire du Mboa.
+                    </p>
+                </div> 
+                <div class="md:w-1/2">
+                    <img src="/image/bg2.JPG" alt="Intérieur du restaurant" class="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg shadow-lg imgA">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-800 py-16 md:py-20 text-white px-4">
+       <div class="container mx-auto">
+            <h2 class="text-center bg-orange-500 font-bold mb-10 text-white text-3xl rounded py-2 lg:text-4xl">NOS VALEURS</h2>
+            <div class="flex flex-col-reverse  md:flex-row items-center md:items-start gap-8 md:gap-12 mt-8">
+                 <div class="md:w-1/2">
+                    <img src="/image/chef  (1).JPG" alt="Chef de cuisine" class="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg shadow-lg imgA">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <div class="space-y-6"> <p class="flex items-start text-white max-w-xl mx-auto md:mx-0 text-lg leading-relaxed">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1 text-2xl"></i> <span class="flex-1">
+                                <strong class="text-orange-400">Authenticité garantie :</strong> Chaque plat est une ode à la tradition camerounaise, préparé avec des recettes ancestrales et des ingrédients frais du marché local.
+                            </span>
+                        </p>
+                        <p class="flex items-start text-white max-w-xl mx-auto md:mx-0 text-lg leading-relaxed">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1 text-2xl"></i>
+                            <span class="flex-1">
+                                <strong class="text-orange-400">Service rapide & chaleureux :</strong> Un accueil convivial, des conseils sur nos spécialités et un service efficace pour une expérience mémorable.
+                            </span>
+                        </p>
+                        <p class="flex items-start text-white max-w-xl mx-auto md:mx-0 text-lg leading-relaxed">
+                            <i class="fas fa-check-circle text-green-500 mr-3 mt-1 text-2xl"></i>
+                            <span class="flex-1">
+                                <strong class="text-orange-400">Accessibilité :</strong> Des prix justes pour un vrai moment de plaisir, rendant la cuisine camerounaise accessible à tous.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-900 py-16 md:py-20 text-white px-4 text-center">
+        <div class="container mx-auto">
+            <h2 class="bg-orange-500 font-bold mb-10 text-white text-3xl rounded py-2 mx-auto max-w-fit px-6 lg:text-4xl">Pourquoi choisir KERSY FOOD</h2> <p class="text-white mb-8 max-w-3xl mx-auto text-lg leading-relaxed text-justify text-balance">
+                Parce que vous méritez le meilleur de la cuisine camerounaise. Venez découvrir une expérience culinaire artisanale au cœur de Douala. Et pour encore plus de simplicité, vous pouvez commander directement via WhatsApp. "Saveurs du Mboa" - Plus qu'un repas, une expérience !
+            </p>
+            <a href="conctact.html" class="bg-orange-500 text-white py-3 px-8 rounded hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-offset-2 inline-block">Contactez-nous</a>
+        </div>
+    </section>
+
+ <footer class="bg-yellow-900 py-10 text-center text-white">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-start text-center md:text-left gap-8 md:gap-x-12">
+    <div class="flex flex-col items-center md:items-start md:w-auto"> <div class="flex items-center mb-2 md:mb-0">
+            <img src="/image/logo (1).JPG" class="w-20 h-20 md:w-24 md:h-24 mr-2">
+            <span class="text-lg text-white uppercase tracking-widest hidden md:block">KERSY FOOD</span>
+        </div>
+        <p class="flex items-center text-lg mt-4 md:mt-2">
+            <i class="fas fa-map-marker-alt text-orange-400 mr-2"></i> Douala, Cameroun
+        </p>
+    </div>
+    <div class="flex flex-col items-center md:items-start md:w-auto mt-8 md:mt-0"> <h3 class="text-white text-xl font-bold mb-3">Contact</h3>
+        <p class="flex items-center text-lg">
+            <i class="fas fa-envelope text-orange-400 mr-2"></i> KersyFood@gmail.com
+        </p>
+        <p class="flex items-center text-lg mt-2">
+            <i class="fas fa-phone-alt text-orange-400 mr-2"></i> 651224108 / 678586079
+        </p>
+    </div>
+    <div class="flex flex-col items-center md:items-start md:w-auto mt-8 md:mt-0"> <h3 class="text-white font-bold text-xl mb-3">Réseaux sociaux</h3>
+        <div class="flex space-x-4 text-orange-400 text-2xl">
+            <a href="https://www.facebook.com/ma page facebok" target="_blank" class="hover:text-yellow-300 mr-4"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/mapage facebok" target="_blank" class="hover:text-yellow-300 mr-4"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/mapage facebok" target="_blank" class="hover:text-yellow-300 mr-4"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/651224108? text= Salut! %20j'aimerais%20faire%20une%20reservation." target="_blank" class="hover:text-yellow-300 mr-4"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</div>
+<div class="border-t border-yellow-800 text-xs text-center py-3 px-4 mt-8 flex flex-col md:flex-row justify-between items-center">
+            <span>&copy; 2025 Kersy Food</span>
+            <span>Tout droit réservé • Designé par <a href="https://wa.me/651224108? text= Salut! %20j'aimerais%20faire%20une%20reservation." target="_blank" class="text-orange-400 hover:underline">Moungoue</a></span>
+        </div>
+
+    </footer>
+    <script src="/js/all.min.js"></script>
+<script >
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>

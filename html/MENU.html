@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Complet - KERSY FOOD</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/tailwind-all.min.css"> 
+
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel="stylesheet" href="/css/swiper.min.css" />
+  <link rel="stylesheet" href="/css/style1.css">
+
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <header class="bg-yellow-900 text-gray-300 py-4 relative z-30">
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+  <div class="container mx-auto px-4 flex items-center justify-between relative z-10">
+    <div class="flex items-center">
+      <img src="/image/logo (1).JPG" alt="Chey Logo" class="w-8 h-8">
+      <span class="ml-2 text-lg text-white uppercase tracking-widest">KERSY FOOD</span>
+    </div>
+    <nav class="hidden md:flex space-x-6 flex gap-30 justify-around">
+      <div><a href="Accueil.html" class=" mr-4 hover:text-yellow-500 transition-colors duration-300">ACCUEIL</a></div>
+      <div><a href="A propos.html" class=" mr-4   hover:text-yellow-500 transition-colors duration-300">A PROPOS</a></div>
+      <div><a href="MENU.html" class=" mr-4 text-yellow-500   ">MENU</a></div>
+      <div><a href="conctact.html" class=" mr-4  hover:text-yellow-500 transition-colors duration-300">RESERVER</a></div>
+      <div><a href="conctact.html" class=" mr-4 hover:text-yellow-500 transition-colors duration-300">CONCTACT</a></div>
+    
+    </nav>
+
+    <!-- Bouton menu hamburger -->
+    <button id="menu-toggle" class="md:hidden z-20">
+      <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Bouton de réservation (desktop uniquement) -->
+    <a href="conctact.html" class="hidden md:block bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 focus:outline-none">RESERVATION</a>
+  </div>
+</header>
+
+<!-- Menu déroulant mobile : affiché en-dessous du header -->
+<nav id="menu" class="hidden md:hidden flex flex-col items-center space-y-4 bg-yellow-900 text-white py-4">
+  <a href="Accueil.html" class="text-yellow-500">ACCUEIL</a>
+  <a href="A propos.html" class="hover:text-yellow-500 transition">A PROPOS</a>
+  <a href="MENU.html" class="hover:text-yellow-500 transition">MENU</a>
+  <a href="conctact.html" class="hover:text-yellow-500 transition">RESERVER</a>
+  <a href="conctact.html" class="hover:text-yellow-500 transition">CONTACT</a>
+</nav>
+  <main class="py-20 bg-gray-900 text-white p-3">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-4 bg-orange-500 text-white rounded">Notre Menu Complet</h2>
+      <p class="text-xl text-gray-400 text-center mb-12">Découvrez les saveurs authentiques du Cameroun et au-delà, préparées avec passion.</p>
+
+      <nav class="menu-category-nav swiper-container flex justify-center md:justify-start items-center mb-10 overflow-hidden pb-4">
+        <div class="swiper-wrapper">
+          <a href="#" data-slide="0" class="swiper-slide menu-category text-xl font-semibold text-gray-400 hover:text-orange-500 transition-colors duration-200 whitespace-nowrap px-4 py-2 rounded-full">PLATS PRINCIPAUX</a>
+          <a href="#" data-slide="1" class="swiper-slide menu-category text-xl font-semibold text-gray-400 hover:text-orange-500 transition-colors duration-200 whitespace-nowrap px-4 py-2 rounded-full">ENTRÉES</a>
+          <a href="#" data-slide="2" class="swiper-slide menu-category text-xl font-semibold text-gray-400 hover:text-orange-500 transition-colors duration-200 whitespace-nowrap px-4 py-2 rounded-full">DESSERTS</a>
+          <a href="#" data-slide="3" class="swiper-slide menu-category text-xl font-semibold text-gray-400 hover:text-orange-500 transition-colors duration-200 whitespace-nowrap px-4 py-2 rounded-full">BOISSONS</a>
+          <a href="#" data-slide="4" class="swiper-slide menu-category text-xl font-semibold text-gray-400 hover:text-orange-500 transition-colors duration-200 whitespace-nowrap px-4 py-2 rounded-full">SPÉCIALITÉS DU CHEF</a>
+        </div>
+      </nav>
+
+      <div id="menu-content-slider" class="swiper-container bg-gray-800 rounded-lg shadow-xl p-12 relative">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide ml-8">
+            <h3 class="text-3xl font-bold text-orange-500  text-center  mb-8">PLATS PRINCIPAUX</h3>
+            <div class="flex flex-wrap justify-center  ">
+              <div class=" menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/ndole (1).JPG" alt="Classic Express" >
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Ndole plantain mur</h4>
+                 <span class="item-price mr-7">2500 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/mbongo.JPG" alt="Double Street">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0
+                </div>
+                <h4 class="item-title">Mbongo plantain mur</h4>
+                <span class="item-price">3500 F</span>
+                 <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/okok salé.jpg" alt="Spicy Loko">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Okok salé </h4>
+                <span class="item-price">3000 F</span>
+                 <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/taro.JPG" alt="Veggie Gold">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Taro</h4>
+                <span class="item-price">2800 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/kondre.JPG" alt="Kondrè">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Kondrè au Bœuf</h4>
+                <span class="item-price">4000 F</span>
+                 <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/dg4.JPG" alt="Poulet DG">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0
+                </div>
+                <h4 class="item-title">Poulet DG</h4>
+                <span class="item-price">4500 F</span>
+               <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/eru.JPG" alt="Eru et Waterfufu">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title"> Waterfufu and Eru</h4>
+                <span class="item-price">4000 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/koki.JPG" alt="Koki">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.5
+                </div>
+                <h4 class="item-title">Koki</h4>
+                <span class="item-price">3500 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/ekwang.JPG" alt="Koundre au ">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Ekwang</h4>
+                <span class="item-price">4000 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/piler pomme.JPG" alt="Nouveau Plat 1">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Pomme piler</h4>
+                <span class="item-price">3000 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/poisson braiser.JPG" alt="Nouveau Plat 2">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Poisson braiser</h4>
+                <span class="item-price">3200 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/met de pistage.JPG" alt="Nouveau Plat 3">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">mets de pistache</h4>
+                <span class="item-price">3000 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <h3 class="text-3xl font-bold text-orange-500 text-center mb-8">ENTRÉES</h3>
+            <div class=" flex flex-wrap justify-center gap-4">
+              <div class=" menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/beignet haricot.JPG" alt="Beignets Haricots">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0
+                </div>
+                <h4 class="item-title">Beignets Haricots</h4>
+                <span class="item-price">1500 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/brochette de boeuf.JPG" alt="Brochettes de bœuf">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Brochettes de Bœuf</h4>
+                <span class="item-price">2000 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/escargot sauter.JPG" alt="Samoussas">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> 3.5
+                </div>
+                <h4 class="item-title">Escargot Rotis</h4>
+                <span class="item-price">1000 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/gambas.JPG" alt="Entrée 4">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> 3.0
+                </div>
+                <h4 class="item-title">Gambas</h4>
+                <span class="item-price">1200 F</span>
+               <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/beignet banane.jpg" alt="Entrée 5">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> 3.5
+                </div>
+                <h4 class="item-title">Beignet Banane</h4>
+                <span class="item-price">1000 F</span>
+                 <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/boulette de boeuf.jpg" alt="Entrée 6">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Boulette de boeuf</h4>
+                <span class="item-price">2500 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/les nems camerounais.jpg" alt="Entrée 7">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">les nems camerounais</h4>
+                <span class="item-price">1200 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/poisson braiser.JPG" alt="Entrée 8">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Poisson Braiser</h4>
+                <span class="item-price">1900 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/boulette de boeuf.jpg" alt="Entrée 9">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Boulette de boeuf</h4>
+                <span class="item-price">1600 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/cotellet  de porc.JPG" alt="Entrée 10">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Cotellet  de porc</h4>
+                <span class="item-price">1750 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/brochette de porc.JPG" alt="Entrée 11">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">brochette de porc</h4>
+                <span class="item-price">1950 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/DG.JPG" alt="Entrée 12">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">DG</h4>
+                <span class="item-price">2100 F</span>
+                 <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <h3 class="text-3xl font-bold text-orange-500 text-center mb-8">DESSERTS</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/salade de fruit.JPG" alt="Salade de Fruits Exotiques">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0
+                </div>
+                <h4 class="item-title">Salade de Fruits</h4>
+                <span class="item-price">1800 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/gateau a la mangue.jpg" alt="Banane Caramélisée">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Gateau a la mangue</h4>
+                <span class="item-price">1200 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/crepe au chocolat.JPG" alt="Dessert 3">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> 3.5
+                </div>
+                <h4 class="item-title">Crepe au chocolat</h4>
+                <span class="item-price">1500 F</span>
+                 <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/glace a la vanille.JPG" alt="Dessert 4">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">glace a la vanille</h4>
+                <span class="item-price">1600 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/glace au chocolat.JPG" alt="Dessert 5">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> 3.5
+                </div>
+                <h4 class="item-title">Glace au chocolat</h4>
+                <span class="item-price">1300 F</span>
+                 <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/gateau manioc.jpg" alt="Dessert 6">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Gateau au manioc</h4>
+                <span class="item-price">1900 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/glace.JPG " alt="Dessert 7">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Glace au miel</h4>
+                <span class="item-price">1700 F</span>
+               <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/crepe au chocolat.JPG" alt="Dessert 8">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Dessert 8</h4>
+                <span class="item-price">1400 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/glace.JPG" alt="Dessert 9">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Dessert 9</h4>
+                <span class="item-price">1200 F</span>
+               <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/crepe au chocolat.JPG" alt="Dessert 10">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Dessert 10</h4>
+                <span class="item-price">1350 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/crepe au chocolat.JPG" alt="Dessert 11">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Dessert 11</h4>
+                <span class="item-price">1550 F</span>
+               <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/glace 3.JPG" alt="Dessert 12">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Dessert 12</h4>
+                <span class="item-price">1700 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide ">
+            <h3 class="text-3xl font-bold text-orange-500 text-center mb-8">BOISSONS</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/jus de bissap.JPG" alt="Jus de Bissap">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Jus de Bissap</h4>
+                <span class="item-price">500 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/coktail.JPG" alt="Cocktail Tropical">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0
+                </div>
+                <h4 class="item-title">Cocktail Tropical</h4>
+                <span class="item-price">700 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/jus de mangue.JPG" alt="Jus Orange">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Jus de Mangue</h4>
+                <span class="item-price">500 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/jus de papaye.JPG" alt="Jus au Miel">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Jus de Papaye</h4>
+                <span class="item-price">800 F</span>
+               <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/jus de ta.JPG" alt="Jus de Tamarin">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Jus de Tamarin</h4>
+                <span class="item-price">1000 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/jus de gingembre.JPG" alt="Jus de Gingembre">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> 3.5
+                </div>
+                <h4 class="item-title">Jus de Gingembre</h4>
+                <span class="item-price">1200 F</span>
+               <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/jus de pasteque.JPG" alt="Boisson 7">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Jus de pasteque</h4>
+                <span class="item-price">900 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/Thé glacé menthe et citron vert {Mojithé}.jpg" alt="Boisson 8">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Thé glacé a la menthe</h4>
+                <span class="item-price">950 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/jus de papaye.JPG" alt="Boisson 9">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Jus de Papaye</h4>
+                <span class="item-price">1100 F</span>
+                 <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/jus d'ananas.JPG" alt="Boisson 10">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Jus Ananas</h4>
+                <span class="item-price">1050 F</span>
+              <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/jus de gingembre.JPG" alt="Boisson 11">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">jus de gingembre au citron</h4>
+                <span class="item-price">1000 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full  sm:w-1/2 lg:w-1/3 xl:w-1/3 ">
+                <img src="/image/coktail2.JPG" alt="Boisson 12">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Coktail</h4>
+                <span class="item-price">1250 F</span>
+                 <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="swiper-slide ">
+            <h3 class="text-3xl font-bold text-orange-500 text-center mb-8">SPECIALITES DU CHEF</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/Poulet DG - Cooking With Claudy.jpg" alt="Jus de Bissap">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Poulet DG</h4>
+                <span class="item-price">2500 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/ndole.JPG " alt="Cocktail Tropical">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0
+                </div>
+                <h4 class="item-title">Ndole Crevette</h4>
+                <span class="item-price">3000 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/Le Nanwondo avec le bâton de manioc.jpg" alt="Jus Orange">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Le Nanwondo avec le bâton de manioc</h4>
+                <span class="item-price">2500 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/poisson braiser.JPG" alt="Jus au Miel">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">poisson braiser</h4>
+                <span class="item-price">2000 F</span>
+               <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/Soya (Cameroun) & plantain.jpg" alt="Jus de Tamarin">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Soya</h4>
+                <span class="item-price">1500 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/eru.JPG" alt="Jus de Gingembre">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> 3.5
+                </div>
+                <h4 class="item-title">Eru</h4>
+                <span class="item-price">1200 F</span>
+               <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3 mb-5">
+                <img src="/image/mbongo2.jpg" alt="Boisson 7">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Mbongo Tchobi</h4>
+                <span class="item-price">2000 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/Riz à la sauce arachides.jpg" alt="Boisson 8">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Riz à la sauce arachides Poulet</h4>
+                <span class="item-price">950 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/brochette de porc.JPG" alt="Boisson 9">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Brochettes de porc</h4>
+                <span class="item-price">1100 F</span>
+                 <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/taro.JPG" alt="Boisson 10">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Achu</h4>
+                <span class="item-price">1500 F</span>
+              <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full sm:w-1/2 lg:w-1/3 xl:w-1/3">
+                <img src="/image/télécharger.jpg" alt="Boisson 11">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">Poulet frit Plantain mur</h4>
+                <span class="item-price">1150 F</span>
+                <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+              <div class="menu-item-card w-full  sm:w-1/2 lg:w-1/3 xl:w-1/3 ">
+                <img src="/image/cotellet  de porc.JPG" alt="Boisson 12">
+                <div class="item-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
+                </div>
+                <h4 class="item-title">cotellet  de porc</h4>
+                <span class="item-price">2500 F</span>
+                 <a href="https://wa.me/651224108? text=bonjour,%20je%20souhaite%20Commander%20." target="_blank" class="item-button-whatsapp font-bold text-center mb-4 bg-orange-600 text-white rounded hover:bg-orange-500"><i class="fab fa-whatsapp"></i>Commander</a>
+              </div>
+            </div>
+          </div>
+
+        
+    </div>
+  </main>
+
+ 
+      <footer class="bg-yellow-900 py-10 text-center text-white">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-start text-center md:text-left gap-8 md:gap-x-12">
+    <div class="flex flex-col items-center md:items-start md:w-auto"> <div class="flex items-center mb-2 md:mb-0">
+            <img src="/image/logo (1).JPG" class="w-20 h-20 md:w-24 md:h-24 mr-2">
+            <span class="text-lg text-white uppercase tracking-widest hidden md:block">KERSY FOOD</span>
+        </div>
+        <p class="flex items-center text-lg mt-4 md:mt-2">
+            <i class="fas fa-map-marker-alt text-orange-400 mr-2"></i> Douala, Cameroun
+        </p>
+    </div>
+    <div class="flex flex-col items-center md:items-start md:w-auto mt-8 md:mt-0"> <h3 class="text-white text-xl font-bold mb-3">Contact</h3>
+        <p class="flex items-center text-lg">
+            <i class="fas fa-envelope text-orange-400 mr-2"></i> KersyFood@gmail.com
+        </p>
+        <p class="flex items-center text-lg mt-2">
+            <i class="fas fa-phone-alt text-orange-400 mr-2"></i> 651224108 / 678586079
+        </p>
+    </div>
+    <div class="flex flex-col items-center md:items-start md:w-auto mt-8 md:mt-0"> <h3 class="text-white font-bold text-xl mb-3">Réseaux sociaux</h3>
+        <div class="flex space-x-4 text-orange-400 text-2xl">
+            <a href="https://www.facebook.com/ma page facebok" target="_blank" class="hover:text-yellow-300 mr-4"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/mapage facebok" target="_blank" class="hover:text-yellow-300 mr-4"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/mapage facebok" target="_blank" class="hover:text-yellow-300 mr-4"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/651224108? text= Salut! %20j'aimerais%20faire%20une%20reservation." target="_blank" class="hover:text-yellow-300 mr-4"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</div>
+<div class="border-t border-yellow-800 text-xs text-center py-3 px-4 mt-8 flex flex-col md:flex-row justify-between items-center">
+            <span>&copy; 2025 Kersy Food</span>
+            <span>Tout droit réservé • Designé par <a href="https://wa.me/651224108? text= Salut! %20j'aimerais%20faire%20une%20reservation." target="_blank" class="text-orange-400 hover:underline">Moungoue</a></span>
+        </div>
+
+    </footer>
+
+
+  <script src="/js/swiper.min.js"></script>
+  <script src="/js/swiper.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // Initialisation du Swiper pour les titres de catégorie (la navigation horizontale en haut)
+        const categoryNavSwiper = new Swiper('.menu-category-nav', {
+            slidesPerView: 'auto',
+            freeMode: true,
+            spaceBetween: 20,
+            breakpoints: {
+                768: {
+                    freeMode: false, // Désactive le freeMode sur les écrans plus grands que 768px
+                    slidesPerView: 'auto',
+                }
+            }
+        });
+
+        // Initialisation du Swiper pour le contenu des plats (les grilles de plats)
+        const menuContentSwiper = new Swiper('#menu-content-slider', {
+            slidesPerView: 1, // Affiche une seule slide de contenu à la fois
+            spaceBetween: 0,
+            effect: 'slide',
+            autoHeight: true, // Le conteneur s'adapte à la hauteur de la slide active
+            loop: false, // Ne pas boucler si tu veux que ça s'arrête aux extrémités
+
+            // Ajout des flèches de navigation
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // Ajout de la pagination (si tu la veux)
+            // pagination: {
+            //     el: '.swiper-pagination',
+            //     clickable: true,
+            // },
+
+            // Synchronisation : quand le Swiper de contenu change, la navigation change aussi
+            on: {
+                slideChange: function () {
+                    const activeIndex = this.activeIndex;
+                    const menuCategories = document.querySelectorAll('.menu-category');
+
+                    menuCategories.forEach((link, index) => {
+                        if (index === activeIndex) {
+                            link.classList.add('text-orange-500');
+                            link.classList.remove('text-gray-400');
+                        } else {
+                            link.classList.remove('text-orange-500');
+                            link.classList.add('text-gray-400');
+                        }
+                    });
+
+                    // Défile la navigation des catégories pour que la catégorie active soit visible
+                    categoryNavSwiper.slideTo(activeIndex);
+                    // Mettre à jour la hauteur du swiper de contenu après un changement de slide
+                    this.updateAutoHeight();
+                },
+                // Pour s'assurer que la hauteur est bien ajustée au chargement initial
+                init: function () {
+                    this.updateAutoHeight();
+                },
+                // Pour que la hauteur s'ajuste si le contenu change (par exemple, des images se chargent)
+                imagesReady: function () {
+                    this.updateAutoHeight();
+                }
+            },
+        });
+
+        // Synchronisation : quand on clique sur un lien de navigation, le Swiper de contenu change
+        const menuCategories = document.querySelectorAll('.menu-category');
+        menuCategories.forEach((link) => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const slideIndex = parseInt(this.getAttribute('data-slide'));
+                menuContentSwiper.slideTo(slideIndex);
+            });
+        });
+
+        // Initialisation: Mettre la première catégorie active au chargement
+        if (menuCategories.length > 0) {
+            menuCategories[0].classList.add('text-orange-500');
+            menuCategories[0].classList.remove('text-gray-400');
+        }
+
+    }); // Fin de DOMContentLoaded
+
+     const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+  </script>
+  
+
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+
+  /* Styles personnalisés pour Swiper (navigation des catégories) */
+  .menu-category-nav .swiper-slide {
+      width: auto !important;
+      margin-right: 1.5rem; /* Espacement entre les catégories de navigation */
+  }
+  .menu-category-nav .swiper-wrapper {
+      display: flex;
+  }
+
+  /* Styles pour la police "serif" si tu n'as pas de police personnalisée définie dans tailwind.config.js */
+  .font-serif {
+    font-family: serif;
+  }
+
+  /* Styles pour les cartes de menu */
+  .menu-item-card {
+      @apply bg-gray-700 rounded-lg shadow-md p-4 flex flex-col items-center text-center; /* Fond gris foncé pour la carte, padding p-4, coins arrondis */
+      position: relative; /* Nécessaire pour positionner l'arrière-plan de l'image si besoin ou pour des overlays futurs */
+      overflow: hidden; /* Assure que tout contenu débordant est caché, utile avec border-radius */
+  }
+
+  /* Nouveau style pour le conteneur de l'image avec l'arrière-plan */
+  .item-image-container {
+      @apply w-36 h-36 flex items-center justify-center rounded-lg mb-3; /* Taille fixe, flex pour centrer l'image, coins arrondis, marge */
+      background-color: #3f3f46; /* Couleur de l'arrière-plan (un gris un peu plus clair que la carte) */
+      /* Ou une couleur d'orange plus subtile: background-color: #fca5a5; */
+      /* Ou la couleur exacte de ton image: background-color: #2D3035; */
+  }
+
+  .menu-item-card img {
+      /* L'image prend la taille maximale du conteneur sans le déborder */
+      @apply w-full h-full object-cover object-center rounded-lg; /* Image à l'intérieur du conteneur, occupe 100% de sa taille */
+  }
+
+  .menu-item-card .item-title {
+      @apply text-white text-lg font-bold mb-2; /* Titre blanc, plus grand */
+  }
+   img{
+        height: 200px;
+        width: 200px;
+
+    }
+
+  /* Nouveau style pour le conteneur des détails (étoiles et prix) */
+  .item-details-bottom {
+      @apply flex justify-between items-center w-full px-2 mb-3; /* Flex pour aligner, espace entre, padding horizontal */
+  }
+
+  .menu-item-card .item-rating {
+      @apply text-orange-400 text-base; /* Étoiles à gauche, un peu plus grandes */
+  }
+
+  .menu-item-card .item-price {
+      @apply text-white text-xl font-extrabold; /* Prix à droite, blanc, plus grand */
+  }
+
+  /* Nouveau style pour le bouton WhatsApp */
+  .item-button-whatsapp {
+      @apply bg-green-500 text-white px-5 py-2 rounded-full hover:bg-green-600 transition-colors duration-200 text-sm flex items-center justify-center; /* Bouton WhatsApp vert, centré, avec icône */
+  }
+  .item-button-whatsapp i {
+      @apply mr-5; /* Marge à droite de l'icône WhatsApp */
+  }
+
+  /* Styles pour les flèches de navigation de Swiper (pour le contenu) */
+  #menu-content-slider .swiper-button-next,
+  #menu-content-slider .swiper-button-prev {
+      @apply text-orange-500 !important;
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+      width: 40px !important;
+      height: 40px !important;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 10;
+  }
+  #menu-content-slider .swiper-button-prev {
+      left: 10px !important;
+  }
+  #menu-content-slider .swiper-button-next {
+      right: 10px !important;
+  }

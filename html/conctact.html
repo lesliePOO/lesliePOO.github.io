@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservations - Mboa Food</title>
+    <link href="/css/tailwind-all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/all.min.css"> </head>
+<body class=" text-white font-sans">
+    <style>
+        .monElement {
+            background-image: url('/image/bg.JPG');
+            background-size:  cover;
+            background-position:center ;
+            background-repeat:  no-repeat; 
+            padding-top: 200px;
+            padding-bottom: 100px;
+            min-height: 500px;
+        }
+      
+        
+        
+    </style>
+
+   <header class="bg-yellow-900 text-gray-300 py-4 relative z-30">
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+  <div class="container mx-auto px-4 flex items-center justify-between relative z-10">
+    <div class="flex items-center">
+      <img src="/image/logo (1).JPG" alt="Chey Logo" class="h-8 md:h-10">
+      <span class="ml-2 text-lg text-white uppercase tracking-widest">KERSY FOOD</span>
+    </div>
+    <nav class="hidden md:flex space-x-6 flex gap-30 justify-around">
+      <div><a href="Accueil.html" class=" mr-4 hover:text-yellow-500 transition-colors duration-300">ACCUEIL</a></div>
+      <div><a href="A propos.html" class=" mr-4   hover:text-yellow-500 transition-colors duration-300">A PROPOS</a></div>
+      <div><a href="MENU.html" class=" mr-4   hover:text-yellow-500 transition-colors duration-300">MENU</a></div>
+      <div><a href="conctact.html" class=" mr-4  text-yellow-500 ">RESERVER</a></div>
+      <div><a href="#footer" class=" mr-4 hover:text-yellow-500 transition-colors duration-300">CONCTACT</a></div>
+    
+    </nav>
+
+    <!-- Bouton menu hamburger -->
+    <button id="menu-toggle" class="md:hidden z-20">
+      <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Bouton de réservation (desktop uniquement) -->
+    <a href="#contat" class="hidden md:block bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 focus:outline-none">RESERVATION</a>
+  </div>
+</header>
+
+<!-- Menu déroulant mobile : affiché en-dessous du header -->
+<nav id="menu" class="hidden md:hidden flex flex-col items-center space-y-4 bg-yellow-700 text-white py-4">
+  <a href="Accueil.html" class="text-yellow-300">ACCUEIL</a>
+  <a href="A propos.html" class="hover:text-yellow-300 transition">A PROPOS</a>
+  <a href="MENU.html" class="hover:text-yellow-300 transition">MENU</a>
+  <a href="conctact.html" class="hover:text-yellow-300 transition">RESERVER</a>
+  <a href="conctact.html" class="hover:text-yellow-300 transition">CONTACT</a>
+</nav>
+
+<section class="  monElement relative  py-24 md:py-32  lg:py-48 " >
+  <div class=" "></div>
+  <div class="container mx-auto px-4 relative z-10 text-center ">
+    <h2 class=" text-4xl sm:text-4xl lg:text-6xl md:text-6xl font-bold text-orange-500 mb-4">RESERVER UNE TABLE</h2>
+    <p class=" text-sm  text-center text-gray-400">
+     Votre table vous attend dans une immersion dans les saveurs riches et variées du Cameron.Réservez des maintenant votre expérience culinaire mémorable.
+    </p>
+    <div class="mt-6">
+      <svg class="w-6 h-6 mx-auto text-gray-300 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </div>
+</section>
+
+    
+        <section class="text-center bg-black w-full py-10">
+            <h2 class="text-4xl  mb-4 text-orange-500">Réservations</h2>
+            <p class="text-lg text-gray-300 mb-6">Nous sommes impatients de vous accueillir pour une expérience culinaire camerounaise authentique et mémorable.</p>
+            <p class="italic text-sm text-gray-400 mb-8">Votre table vous attend pour un voyage de saveurs du Mboa.</p>
+        </section>
+
+        
+    <section id="contat" class="bg-gray-900 py-10 px-4 lg:px-1 lg:px-16   flex  flex-col lg:flex-row  lg:items-start lg:space-x-16  lg:justify-between">
+        <div class=" lg:mt-20  mb-20 lg:mb-0 lg:w-1/2 lg:max-w-md ">
+            <h6 class="text-sm text-yellow-800 uppercase tracking-widest mb-2">RESTEZ EN CONTACT</h6>
+            <hr class="hr-custom">
+            <h2 class="text-3xl font-bold text-yellow-500 mb-4">Contactez-nous</h2>
+            <p class="text-gray-400 mb-2 max-w-xl">Decouvrez l'authenticiter des saveurs camerounaises au coeur de Douala.Notre restaurant vous accueile dans une ambiance chaleureuse pour deguster des plats traditionnels prepares avec passions et ingredieents frais</p>
+
+            <div class="mb-6 text-sm md:text-base ">
+                <h6 class="text-sm text-yellow-800 uppercase tracking-widest mb-2">KERSY FOOD</h6>
+               <div class="flex justify-between"> <div class="flex items-center mb-3 text-sm"><p class="flex items-center text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-3 text-yellow-500 text-3xl"></i>Bonamoussadi<br>Douala, Cameroun</p></div>
+                <div  class="flex items-center mb-3 ml-3 "><p class="flex items-center text-gray-400 mb-2 text-sm"><i class="fas fa-envelope mr-3 text-yellow-500  text-3xl ml-2"></i>KersyFood@gmail.com</p></div></div>
+                <div class="flex justify-between"> <div  class="flex items-center mb-3 text-sm"><p class="flex items-center text-gray-400 mb-2"><i class="fas fa-phone mr-3 text-yellow-500  text-3xl"></i>(+237) 651 22 41 02 <br> (+237) 651 22 41 02</p></div>
+                <div  class="flex items-center mb-3 mr-6"><p class=" flex items-center text-gray-400 mb-2 text-sm "><i class="far fa-clock mr-3 text-yellow-500  text-3xl"></i>Open 04.00 pm <br>Closed 01.00 am </p></div></div>
+            </div>
+
+            
+        </div>
+
+        <div class="lg:w-1/2 lg:max-w-lg lg:ml-40">
+            <h2 class="text-2xl font-bold text-orange-500  mb-4">Laissez-nous un message</h2>
+            <p class="text-gray-400 mb-6">Remplissez le formulaire ci-dessous pour nous conctacter.</p>
+            <form onsubmit="sendToWhatsApp(event)" class=" rounded-lg h-96  lg:col-span-5 border border-radius border-yellow-300 p-6 rounded-md shadow-md text-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label for="name" class="block text-yellow-800 text-sm font-bold mb-2 text-left ml-2">NOM *</label>
+                        <input id="name" class="shadow-appearance-none border rounded w-full py-2 px-3 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline-yellow" type="text" id="name" class="form-input" placeholder="Votre nom">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-yellow-800 text-sm font-bold mb-2 text-left ml-2">ADRESSE E-MAIL *</label>
+                        <input id="email" class="shadow-appearance-none border rounded w-full py-2 px-3 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline-yellow type="email" id="email" class="form-input" placeholder="email@email.com">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label  for="subject" class=" ml- block  text-sm text-yellow-800 font-bold mb-2 text-left ml-2">SUJECT *</label>
+                    <input id="subject" class="shadow-appearance-none border rounded w-full py-2 px-3 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline-yellow type="text" id="subject" class="form-input" placeholder="Sujet de votre message">
+                </div>
+                <div class="mb-6">
+                    <label for="comments" class="block  text-sm text-yellow-800 font-bold mb-2 text-left ml-2 ">COMMENTAIRES/QUESTIONS *</label>
+                    <textarea id="comments" class="shadow-appearance-none border rounded w-full py-2 px-3 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline-yellow id="comments" class="form-input" rows="5" placeholder="Votre message"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="bg-yellow-500 text-gray-900 w-full font-bold py-3 px-6 rounded-lg hover:bg-yellow-800 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-700 ">ENVOYER</button>
+                </div>
+            </form>
+        </div>
+    </section>
+          
+   <footer class="bg-yellow-900 py-10 text-center text-white" id="footer">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:items-start text-center md:text-left gap-8 md:gap-x-12">
+    <div class="flex flex-col items-center md:items-start md:w-auto"> <div class="flex items-center mb-2 md:mb-0">
+            <img src="/image/logo (1).JPG" class="w-20 h-20 md:w-24 md:h-24 mr-2 ">
+            <span class="text-lg text-white uppercase tracking-widest hidden md:block">KERSY FOOD</span>
+        </div>
+        <p class="flex items-center text-lg mt-4 md:mt-2">
+            <i class="fas fa-map-marker-alt text-orange-400 mr-2"></i> Douala, Cameroun
+        </p>
+    </div>
+    <div class="flex flex-col items-center md:items-start md:w-auto mt-8 md:mt-0"> <h3 class="text-white text-xl font-bold mb-3">Contact</h3>
+        <p class="flex items-center text-lg">
+            <i class="fas fa-envelope text-orange-400 mr-2"></i> KersyFood@gmail.com
+        </p>
+        <p class="flex items-center text-lg mt-2">
+            <i class="fas fa-phone-alt text-orange-400 mr-2"></i> 651224108 / 678586079
+        </p>
+    </div>
+    <div class="flex flex-col items-center md:items-start md:w-auto mt-8 md:mt-0"> <h3 class="text-white font-bold text-xl mb-3">Réseaux sociaux</h3>
+        <div class="flex space-x-4 text-orange-400 text-2xl">
+            <a href="https://www.facebook.com/ma page facebok" target="_blank" class="hover:text-yellow-300 mr-4"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/mapage facebok" target="_blank" class="hover:text-yellow-300 mr-4"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/mapage facebok" target="_blank" class="hover:text-yellow-300 mr-4"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/651224108? text= Salut! %20j'aimerais%20faire%20une%20reservation." target="_blank" class="hover:text-yellow-300 mr-4"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</div>
+<div class="border-t border-yellow-800 text-xs text-center py-3 px-4 mt-8 flex flex-col md:flex-row justify-between items-center">
+            <span>&copy; 2025 Kersy Food</span>
+            <span>Tout droit réservé • Designé par <a href="https://wa.me/651224108? text= Salut! %20j'aimerais%20faire%20une%20reservation." target="_blank" class="text-orange-400 hover:underline">Moungoue</a></span>
+        </div>
+
+    </footer>
+     <script src="/js/all.min.js"></script>
+<script >
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+  function sendToWhatsApp(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("comments").value;
+
+    const phone = "651224108"; // Remplace ce numéro par le tien sans le +, par exemple : 2250700000000
+    const text = `Bonjour, voici une nouvelle demande depuis le site :
+Nom : ${name}
+Email : ${email}
+Sujet : ${subject}
+Message : ${message}`;
+
+    const encodedText = encodeURIComponent(text);
+    const url = `https://wa.me/${phone}?text=${encodedText}`;
+
+    window.open(url, "_blank");
+  }
+</script>
+
+</body>
+</html>
